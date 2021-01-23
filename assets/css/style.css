@@ -52,6 +52,11 @@ header{
     font-size: 18px; 
 }
 
+.logo a img{
+    width: 250px;
+    
+}
+
 /* Main */
 .main{
     background-color: var(--color-background);
@@ -79,6 +84,7 @@ header{
 
 .eu__sou h1{
     font-size: 75px;
+    text-align: center;
     text-transform: uppercase;
     color: var(--color-secondary);
 }

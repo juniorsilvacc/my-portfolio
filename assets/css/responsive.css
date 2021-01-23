@@ -1,4 +1,7 @@
 @media (max-width: 768px){
+    .eu__sou h1{
+        font-size: 62px;
+    }
     .about .about__items{
         flex-direction: column;
     }
