@@ -1,4 +1,7 @@
 @media (max-width: 768px){
+    .menu ul{
+        flex-direction: column;
+    }
     .eu__sou h1{
         font-size: 62px;
     }

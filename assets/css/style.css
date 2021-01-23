@@ -21,6 +21,7 @@
 
 body{
     background-color: var(--color-background);
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -173,8 +174,35 @@ header{
     text-align: justify;
 }
 
+/* Projetos */
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card_img{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 25px;
+    border-radius: 8px;
+}
+
+.card_img img{
+    transition: img 1s ease;
+}
+
+.card_img:hover{
+    filter: grayscale(25%);
+    transform: scale(1.1);
+}
+
+.small_img{
+    height: 100%;
+}
+
 /* Contato */
-.contact{
+.title{
     color: var(--color-secondary);
     font-size: 38px;
     text-transform: uppercase;
