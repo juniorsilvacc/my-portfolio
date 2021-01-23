@@ -50,6 +50,17 @@ header{
     color: var(--color-secondary);
     margin-left: 20px;
     font-size: 18px; 
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: var(--color-primary);;
+    transition: 400ms ease;
+}
+
+.menu a.active{
+    color: var(--color-primary);
+    font-weight: 500;
 }
 
 .logo a img{
@@ -229,9 +240,15 @@ footer .fabfa{
     font-size: 35px;
     color: var(--color-primary);
     margin-bottom: 38px;
+    cursor: pointer;
 }
 
 footer p{
     color: var(--color-secondary);
     font-size: 18px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--color-primary);
 }
