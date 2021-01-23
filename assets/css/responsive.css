@@ -1,0 +1,23 @@
+@media (max-width: 768px){
+    .about .about__items{
+        flex-direction: column;
+    }
+    .about .minha__foto{
+        margin-bottom: 48px;
+    }
+    .about .sobre__mim{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .about .sobre__mim p{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .about .boxs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .box{
+        padding: 60px 0;
+    }
+}

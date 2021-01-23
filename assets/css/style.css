@@ -1,0 +1,231 @@
+:root{
+    --color-primary:  #8257e6;
+    --color-secondary: #e1e1e6;
+    --color-background: #121214;
+}
+/* Gerais */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+/* Header */
+header{
+    height: 80px;
+    padding: 20px 0; 
+    background-color: var(--color-background);
+    color: #FFF;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu a{
+    text-decoration: none; 
+    color: var(--color-secondary);
+    margin-left: 20px;
+    font-size: 18px; 
+}
+
+/* Main */
+.main{
+    background-color: var(--color-background);
+    height: calc(100vh - 80px);
+}
+
+.main .description{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.main .eu__sou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.eu__sou h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.eu__sou h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+.eu__sou h3{
+    font-size: 25px;
+    color: var(--color-secondary);
+}
+
+.main .fab__fa{
+    font-size: 35px;
+    color: var(--color-primary);
+    margin-top: 20px;
+}
+
+.main .fab_fa{
+    margin: 12px;
+    cursor: pointer;
+}
+
+/* About */
+.a{
+    background-color: var(--color-background);
+    background: linear-gradient(-45deg, #0f0133, #121214, #121214, #121214);
+    animation: colors 15s ease infinite;
+    background-size: 400% 400%;
+    padding: 80px 0;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    } 
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}   
+
+.about .about__items{
+    display: flex;
+}
+
+.about .minha__foto img{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(left top, #8257e6 0, #b698fc 100%);
+    padding: 5px;
+}
+
+.about__items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sobre__mim{
+    margin-left: 60px;
+}
+
+.about .sobre__mim h1{
+    color: var(--color-secondary);
+    margin-bottom: 24px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.about .sobre__mim p{
+    color: var(--color-secondary);
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+/* Contato */
+.contact{
+    color: var(--color-secondary);
+    font-size: 38px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.boxs{
+    display: flex;
+    width: 100%;
+}
+
+.box{
+    background-color: #202024;
+    width: 400px;
+    height: 250px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 30px 0 rgba(33, 22, 63, 0.5);
+    margin: 50px;
+    flex: 1;
+}
+
+.box:hover{
+    box-shadow: 0 15px 30px 0 rgba(50, 33, 85, 0.6);
+}
+
+.box h2{
+    color: var(--color-secondary);
+    font-size: 22px;
+}
+
+.box h3{
+    color: var(--color-secondary);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.box i{
+    font-size: 50px;
+    color: var(--color-primary);
+}
+
+/* Footer */
+#footer{
+    background-color: #0D0D0F;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    margin-top: 50px;
+}
+
+footer .fabfa{
+    margin: 12px;
+    font-size: 35px;
+    color: var(--color-primary);
+    margin-bottom: 38px;
+}
+
+footer p{
+    color: var(--color-secondary);
+    font-size: 18px;
+}
